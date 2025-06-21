@@ -554,12 +554,7 @@
     </div>
 <!-- Main body contents here-->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xcence | Premium Crypto OTC Trading</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -568,10 +563,6 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        html {
-            font-size: 16px;
         }
 
         body {
@@ -594,13 +585,12 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-            width: 100%;
         }
 
         /* Button Styles */
         .btn {
             display: inline-block;
-            padding: 0.8rem 1.5rem;
+            padding: 1rem 2rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -608,12 +598,11 @@
             border: none;
             cursor: pointer;
             font-size: 1rem;
-            white-space: nowrap;
         }
 
         .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(242, 189, 255, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(242, 189, 255, 0.3);
         }
 
         .btn-primary {
@@ -623,7 +612,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(235, 193, 255, 0.3);
+            box-shadow: 0 10px 25px rgba(235, 193, 255, 0.3);
             color: white;
         }
 
@@ -638,14 +627,14 @@
             background: rgba(255, 255, 255, 0.2);
             color: #fff;
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
         }
 
         /* Animation Classes */
         .fade-in {
             opacity: 0;
-            transform: translateY(20px);
-            transition: all 0.6s ease;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
         }
 
         .fade-in.visible {
@@ -655,8 +644,8 @@
 
         .slide-in-left {
             opacity: 0;
-            transform: translateX(-30px);
-            transition: all 0.6s ease;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
         }
 
         .slide-in-left.visible {
@@ -666,8 +655,8 @@
 
         .slide-in-right {
             opacity: 0;
-            transform: translateX(30px);
-            transition: all 0.6s ease;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
         }
 
         .slide-in-right.visible {
@@ -677,8 +666,8 @@
 
         .slide-in-up {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.6s ease;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
         }
 
         .slide-in-up.visible {
@@ -689,7 +678,6 @@
         /* Hero Section */
         .hero {
             height: 100vh;
-            min-height: 600px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-image: url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop');
             background-size: cover;
@@ -737,11 +725,10 @@
             z-index: 2;
             max-width: 800px;
             padding: 0 2rem;
-            width: 100%;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
             font-weight: 700;
             color: #fff;
             margin-bottom: 1.5rem;
@@ -750,7 +737,7 @@
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2rem;
             font-weight: 300;
@@ -760,301 +747,240 @@
             display: flex;
             gap: 1rem;
             justify-content: center;
-            flex-wrap: wrap;
         }
+
+        
+
+        /* Who We Are Section */
+      .who-we-are-container {
+    background: url('https://i.ibb.co/tPzWg0wD/A-minimal-abstract-design-featuring-a-jet-black-background-glowing-blue-light-lines-sleek-curved-neo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 2.4rem;
+    margin-bottom: 3rem;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 120%;
+    max-width: 1800px;
+    margin-left: -10%;
+    margin-right: auto;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.who-we-are-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.who-we-are-container .section-title,
+.who-we-are-container .intro-text {
+    position: relative;
+    z-index: 2;
+}
+
+.who-we-are-container .section-title {
+    margin-bottom: 3rem;
+    text-align: left;
+    color: #ffffff !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    -webkit-text-fill-color: #ffffff !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    background-clip: unset !important;
+}
+
+.who-we-are-container .intro-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 0;
+    color: #ffffff !important;
+    font-weight: 400 !important;
+    text-align: left;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.who-we-are-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.who-we-are-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.who-we-are-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 400;
+}
+.who-we-are-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 0;
+    margin-right: -100px;
+}
+.who-we-are-section {
+    background: #ffffff;
+    padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.who-we-are-section::before {
+    content: '';
+    margin-right: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.02) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.8) 100%);
+    z-index: 1;
+}
+
+.who-we-are-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.who-we-are-content h2 {
+    color: #0f172a;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    position: relative;
+    display: inline-block;
+    line-height: 1.1;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.who-we-are-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+    border-radius: 3px;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.who-we-are-content p {
+    color: #0f172a;
+    font-size: 2rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.2px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+    font-family: 'Poppins', sans-serif;
+}
+
+.who-we-are-content p:last-child {
+    margin-bottom: 0;
+    font-size: 1.6rem;
+    color: #0f172a;
+    font-weight: 700;
+    line-height: 1.8;
+    max-width: 800px;
+    font-style: normal;
+    letter-spacing: 0.3px;
+}
+
+/* Professional accent elements */
+.who-we-are-content::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+    opacity: 0.6;
+}
+@media (max-width: 768px) {
+    .who-we-are-section {
+        padding: 6rem 0;
+    }
+    
+    .who-we-are-content h2 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 2rem;
+    }
+    
+    .who-we-are-content p {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .who-we-are-content p:last-child {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .who-we-are-content h2 {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+    
+    .who-we-are-content p {
+        font-size: 1.2rem;
+    }
+    
+    .who-we-are-content p:last-child {
+        font-size: 1.1rem;
+    }
+}
+
 
         /* OTC Desk Section */
-        .otc-desk-section {
-            background: #ffffff;
-            padding: 6rem 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
-        }
+        
 
-        .otc-desk-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.02) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.02) 0%, transparent 50%),
-                linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.8) 100%);
-            z-index: 1;
-        }
-
-        .otc-desk-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        .otc-desk-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .otc-desk-image {
-            position: relative;
-            order: 2;
-            width: 100%;
-        }
-
-        .otc-image {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            border-radius: 12px;
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s ease;
-            position: relative;
-        }
-
-        .otc-image:hover {
-            transform: translateY(-5px) scale(1.01);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .otc-desk-text {
-            order: 1;
-            padding-right: 0;
-            width: 100%;
-        }
-
-        .otc-desk-text h2 {
-            color: #0f172a;
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            display: inline-block;
-            line-height: 1.1;
-            text-shadow: 0 3px 4px rgba(30, 25, 25, 0.8);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .otc-desk-text h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 80px;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2, transparent);
-            border-radius: 3px;
-            box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
-        }
-
-        .otc-desk-text p {
-            color: #0f172a;
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 2rem;
-            font-weight: 600;
-            letter-spacing: 0.2px;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(90deg, #193789, #2c4db8, #28339b, #3146a3, #803ac5);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(219, 171, 251, 0.5));
-        }
-
-        .otc-features {
-            list-style: none;
-            padding: 0;
-            margin: 2rem 0;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        .otc-features li {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 0;
-            font-weight: 500;
-            position: relative;
-            padding-left: 2rem;
-            font-family: 'Poppins', sans-serif;
-            transition: transform 0.3s ease;
-            background: linear-gradient(90deg, #081b4e, #0f2672, #172072, #071e85, #4a0e85);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 2px 4px rgba(238, 212, 254, 0.5));
-        }
-
-        .otc-features li:hover {
-            transform: translateX(3px);
-        }
-
-        .otc-features li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-weight: bold;
-            font-size: 1rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            transition: transform 0.3s ease;
-        }
-
-        .otc-highlight {
-            color: #0f172a;
-            font-size: 1.2rem;
-            font-weight: 700;
-            line-height: 1.5;
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-            border-left: 4px solid #667eea;
-            border-radius: 10px;
-            font-family: 'Poppins', sans-serif;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        /* Who We Serve Section */
-        .who-we-serve-section {
-            background: #ffffff;
-            padding: 6rem 0;
-            position: relative;
-            overflow: hidden;
-            box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
-        }
-
-        .who-we-serve-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.02) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.02) 0%, transparent 50%),
-                linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(248, 250, 252, 0.8) 100%);
-            z-index: 1;
-        }
-
-        .who-we-serve-content {
-            position: relative;
-            z-index: 2;
-            max-width: 1000px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 0 1.5rem;
-        }
-
-        .who-we-serve-content h2 {
-            color: #0f172a;
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            position: relative;
-            display: inline-block;
-            line-height: 1.1;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .who-we-serve-content h2::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
-            border-radius: 3px;
-            box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
-        }
-
-        .serve-categories {
-            list-style: none;
-            padding: 0;
-            margin: 3rem 0;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .serve-categories li {
-            background: #0f172a;
-            color: #ffffff;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            padding: 2rem 1.5rem;
-            border-radius: 10px;
-            position: relative;
-            text-align: left;
-            font-weight: 500;
-            list-style: none;
-            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .serve-categories li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.25);
-            border-color: rgba(102, 126, 234, 0.3);
-        }
-
-        .serve-categories li::before {
-            content: "✓";
-            position: absolute;
-            left: 1.5rem;
-            top: 2rem;
-            color: #667eea;
-            font-weight: bold;
-            font-size: 1.2rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .category-title {
-            display: block;
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .category-range {
-            display: block;
-            font-size: 1rem;
-            color: rgba(255, 255, 255, 0.9);
-            font-weight: 400;
-            margin-left: 2rem;
-            line-height: 1.5;
-        }
+        
 
         /* Our Offerings Section */
         .offerings-section {
@@ -1064,7 +990,7 @@
                 radial-gradient(circle at 80% 20%, rgba(30, 64, 175, 0.2) 0%, transparent 50%);
             background-size: cover;
             background-position: center;
-            padding: 6rem 0;
+            padding: 12rem 0;
             position: relative;
             overflow: hidden;
         }
@@ -1082,25 +1008,25 @@
         }
 
         .section-heading {
-            color: #ffffff;
-            font-size: 2.5rem;
+            color: #1e3a8a;
+            font-size: 4.2rem;
             font-weight: 900;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 6px;
             position: relative;
             display: block;
             line-height: 1.1;
-            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             font-family: 'Montserrat', sans-serif;
+            white-space: nowrap;
             text-align: center;
             z-index: 2;
         }
 
         .content-wrapper {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             gap: 3rem;
         }
@@ -1108,46 +1034,48 @@
         .offerings-content {
             position: relative;
             z-index: 2;
-            max-width: 100%;
+            max-width: 400px;
             margin: 0;
-            text-align: center;
-            padding: 0 1.5rem;
-            width: 100%;
+            text-align: left;
+            padding: 0;
         }
 
         .offerings-list {
-            list-style: none;
+            list-style: disc !important;
             padding: 0;
             margin: 2rem 0;
             display: flex;
             flex-direction: column;
             gap: 1rem;
             max-width: 100%;
-            margin-left: auto;
+            margin-left: 0;
             margin-right: auto;
-            width: 100%;
         }
 
         .offerings-list li {
             background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: #ffffff;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             line-height: 1.4;
-            padding: 1rem;
+            padding: 0.8rem 1.5rem;
             border-radius: 8px;
             position: relative;
             text-align: center;
             font-weight: 600;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            list-style: none !important;
+            list-style-type: none !important;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(0, 0, 0, 0.2);
-            width: 100%;
+            white-space: nowrap;
+            width: 546px;
+            flex-shrink: 0;
         }
 
         .offerings-list li:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
             background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
             border-color: rgba(0, 0, 0, 0.4);
         }
@@ -1156,37 +1084,35 @@
         .register-form {
             position: relative;
             background: rgba(255, 255, 255, 0.95);
-            padding: 1.5rem;
+            padding: 2.1rem;
             border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             max-width: 480px;
-            width: 100%;
             z-index: 2;
-            margin: 0 1.5rem;
         }
 
         .register-form h3 {
             color: #0f172a;
-            font-size: 1.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.4rem;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             font-family: 'Montserrat', sans-serif;
         }
 
         .register-form .form-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.05rem;
         }
 
         .register-form input,
         .register-form select,
         .register-form textarea {
             width: 100%;
-            padding: 0.8rem;
+            padding: 0.7rem;
             border: 2px solid rgba(102, 126, 234, 0.2);
             border-radius: 8px;
             font-size: 1rem;
@@ -1204,143 +1130,127 @@
         }
 
         .register-form textarea {
-            height: 100px;
+            height: 70px;
             resize: vertical;
         }
 
         .register-form button {
             width: 100%;
-            padding: 0.9rem;
-            font-size: 1rem;
+            padding: 0.84rem;
+            font-size: 1.1rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         /* Responsive Styles */
-        @media (min-width: 480px) {
-            .hero h1 {
-                font-size: 3rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .otc-features {
-                grid-template-columns: 1fr 1fr;
-            }
-            
-            .serve-categories li {
-                padding: 2rem;
-            }
-        }
-
-        @media (min-width: 768px) {
-            html {
-                font-size: 17px;
-            }
-            
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.3rem;
-            }
-            
-            .otc-desk-section,
-            .who-we-serve-section,
-            .offerings-section {
-                padding: 8rem 0;
-            }
-            
-            .otc-desk-text h2,
-            .who-we-serve-content h2,
-            .section-heading {
-                font-size: 3.5rem;
-                letter-spacing: 4px;
-            }
-            
+        @media (max-width: 1024px) {
             .otc-desk-grid {
-                flex-direction: row;
+                grid-template-columns: 1fr 1fr;
                 gap: 4rem;
             }
             
-            .serve-categories {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
-            
-            .content-wrapper {
-                flex-direction: row;
-                align-items: flex-start;
-            }
-            
-            .offerings-content {
-                text-align: left;
-                padding: 0;
-            }
-            
-            .offerings-list {
-                align-items: flex-start;
-            }
-            
-            .offerings-list li {
-                text-align: left;
-                padding: 1rem 1.5rem;
-            }
-        }
-
-        @media (min-width: 1024px) {
-            .hero h1 {
-                font-size: 4rem;
-            }
-            
-            .hero p {
-                font-size: 1.5rem;
-            }
-            
-            .otc-desk-section,
-            .who-we-serve-section,
-            .offerings-section {
-                padding: 10rem 0;
-            }
-            
-            .otc-desk-text h2,
-            .who-we-serve-content h2,
-            .section-heading {
-                font-size: 4rem;
-                letter-spacing: 5px;
-            }
-            
-            .otc-desk-grid {
-                gap: 6rem;
+            .otc-desk-text h2 {
+                font-size: 3.8rem;
+                letter-spacing: 3px;
             }
             
             .otc-image {
-                max-height: 500px;
-            }
-            
-            .serve-categories {
-                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+                height: 400px;
             }
         }
 
-        @media (min-width: 1200px) {
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+          
+            
+            .otc-desk-grid {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+            }
+            
+            .otc-image {
+                height: 350px;
+            }
+            
+            .serve-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-wrapper {
+                flex-direction: column;
+            }
+            
+            .offerings-list li {
+                width: 100%;
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+            
+           
             .otc-desk-text h2,
             .who-we-serve-content h2,
             .section-heading {
-                font-size: 4.5rem;
-                letter-spacing: 6px;
+                font-size: 2.8rem;
+                letter-spacing: 2px;
+                margin-top: -35%;
+            }
+            .who-we-serve-section {
+                margin-top: -20%;
             }
             
-            .hero h1 {
-                font-size: 4.5rem;
+            .otc-image {
+                height: 280px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
+        .premium-section.parallax-bg1 {
+    position: relative;
+    overflow: hidden;
+    background: url('https://raw.githubusercontent.com/krsnasboy/test/refs/heads/main/ChatGPT%20Image%20Jun%2021%2C%202025%2C%2006_20_59%20PM.png') center center / cover no-repeat;
+}
+
+.premium-section.parallax-bg1::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.02) 10px,
+        rgba(255, 255, 255, 0.02) 20px
+    );
+    z-index: 0;
+}
+
     </style>
 </head>
 <body>
+
+
+
+    
     <!-- Hero Section -->
     <section class="hero parallax-bg">
         <div class="container">
@@ -1355,61 +1265,1397 @@
         </div>
     </section>
 
-    <!-- About Our OTC Desk Section -->
-    <section class="otc-desk-section">
+
+<!-- Body Content for Crypto OTC DESK LANDING PAGE -->
+<body>
+    <!-- Premium Trading Experience Section -->
+    <section class="premium-section parallax-bg1">
         <div class="container">
-            <div class="otc-desk-content fade-in">
-                <div class="otc-desk-grid">
-                    <div class="otc-desk-text slide-in-left">
-                        <h2>ABOUT OUR OTC DESK</h2>
-                        <p>Our experienced OTC desk specializes in high-value crypto transactions:</p>
-                        
-                        <ul class="otc-features">
-                            <li>Personalized OTC trading</li>
-                            <li>Private quotes</li>
-                            <li>Minimal market impact</li>
-                            <li>No slippage on large orders</li>
-                            <li>Dedicated relationship managers</li>
-                            <li>Same-day INR/crypto settlements</li>
-                            <li>Deep liquidity via top providers</li>
-                        </ul>
-                        
-                        <p class="otc-highlight">Our OTC services start from $10,000 USDT (approx ₹8 lakh) with no upper limit.</p>
+            <div class="section-header">
+                <h2 class="section-title glitch" data-text="PREMIUM TRADING EXPERIENCE">PREMIUM TRADING EXPERIENCE</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Institutional-grade crypto OTC services with personalized execution</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.2V15.7C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z"></path>
+                        </svg>
                     </div>
-                    <div class="otc-desk-image slide-in-right">
-                        <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop" alt="OTC Desk" class="otc-image">
+                    <h3>Bank-Level Security</h3>
+                    <p>Multi-signature cold storage, institutional-grade custody solutions, and insured assets</p>
+                    <div class="feature-number">01</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
+                        </svg>
+                    </div>
+                    <h3>Zero Slippage</h3>
+                    <p>Fixed pricing for large orders with no market impact or price fluctuations</p>
+                    <div class="feature-number">02</div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,3L2,12H5V20H19V12H22L12,3M12,7.7L16,11.2V18H14V12H10V18H8V11.2L12,7.7Z"></path>
+                        </svg>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>Round-the-clock trading desk with dedicated relationship managers</p>
+                    <div class="feature-number">03</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Enterprise Features Section -->
+    <section class="enterprise-features">
+        <div class="container">
+            <div class="features-container">
+                <div class="features-content">
+                    <h2 class="features-title">Built for Enterprise Demands</h2>
+                    <p class="features-description">Our platform is engineered to meet the most stringent requirements of global enterprises.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>High Performance</h3>
+                                <p>Process millions of transactions per second with sub-millisecond latency.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Global Scale</h3>
+                                <p>Deploy across 50+ regions worldwide with automatic load balancing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Military-Grade Security</h3>
+                                <p>End-to-end encryption with FIPS 140-2 Level 4 certified modules.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h3>Compliance Ready</h3>
+                                <p>Pre-configured for GDPR, HIPAA, SOC 2, and other regulatory frameworks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-visual">
+                    <div class="visual-container">
+                        <div class="visual-element" id="visual-element-1"></div>
+                        <div class="visual-element" id="visual-element-2"></div>
+                        <div class="visual-element" id="visual-element-3"></div>
+                        <div class="visual-element" id="visual-element-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .enterprise-features {
+                padding: 8rem 0;
+                background: #fff;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .enterprise-features::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: 
+                    radial-gradient(circle at 70% 30%, rgba(102, 126, 234, 0.05) 0%, transparent 50%),
+                    radial-gradient(circle at 30% 70%, rgba(118, 75, 162, 0.05) 0%, transparent 50%);
+                z-index: 1;
+            }
+            
+            .features-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 4rem;
+                align-items: center;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .features-content {
+                opacity: 0;
+                transform: translateX(-50px);
+                transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+            }
+            
+            .features-title {
+                font-size: 3rem;
+                font-weight: 800;
+                color: #0f172a;
+                margin-bottom: 1.5rem;
+                line-height: 1.2;
+            }
+            
+            .features-description {
+                font-size: 1.2rem;
+                color: #475569;
+                margin-bottom: 3rem;
+                line-height: 1.6;
+            }
+            
+            .features-list {
+                display: grid;
+                gap: 2rem;
+            }
+            
+            .feature-item {
+                display: flex;
+                gap: 1.5rem;
+                opacity: 0;
+                transform: translateX(-20px);
+                transition: all 0.6s ease;
+            }
+            
+            .feature-item:nth-child(1) { transition-delay: 0.1s; }
+            .feature-item:nth-child(2) { transition-delay: 0.2s; }
+            .feature-item:nth-child(3) { transition-delay: 0.3s; }
+            .feature-item:nth-child(4) { transition-delay: 0.4s; }
+            
+            .feature-icon {
+                width: 50px;
+                height: 50px;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 1.2rem;
+                flex-shrink: 0;
+            }
+            
+            .feature-text h3 {
+                font-size: 1.3rem;
+                color: #0f172a;
+                margin-bottom: 0.5rem;
+                font-weight: 600;
+            }
+            
+            .feature-text p {
+                color: #64748b;
+                line-height: 1.6;
+            }
+            
+            .features-visual {
+                position: relative;
+                height: 500px;
+                opacity: 0;
+                transform: translateX(50px);
+                transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+            }
+            
+            .visual-container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                background: rgba(241, 245, 249, 0.5);
+                border-radius: 20px;
+                overflow: hidden;
+                border: 1px solid rgba(203, 213, 225, 0.3);
+            }
+            
+            .visual-element {
+                position: absolute;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                border-radius: 8px;
+                opacity: 0;
+                transition: all 0.6s ease;
+            }
+            
+            #visual-element-1 {
+                width: 120px;
+                height: 120px;
+                top: 50px;
+                left: 50px;
+                transform: translateY(20px);
+                transition-delay: 0.3s;
+            }
+            
+            #visual-element-2 {
+                width: 80px;
+                height: 80px;
+                bottom: 80px;
+                right: 70px;
+                transform: translateY(30px);
+                transition-delay: 0.4s;
+            }
+            
+            #visual-element-3 {
+                width: 160px;
+                height: 60px;
+                top: 200px;
+                right: 40px;
+                transform: translateY(25px);
+                transition-delay: 0.5s;
+            }
+            
+            #visual-element-4 {
+                width: 60px;
+                height: 160px;
+                bottom: 50px;
+                left: 100px;
+                transform: translateY(35px);
+                transition-delay: 0.6s;
+            }
+            
+            @media (max-width: 1024px) {
+                .features-container {
+                    grid-template-columns: 1fr;
+                }
+                
+                .features-visual {
+                    height: 400px;
+                    order: -1;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .features-title {
+                    font-size: 2.5rem;
+                }
+                
+                .features-visual {
+                    height: 300px;
+                }
+            }
+
+            .process-section.parallax-bg2 {
+    position: relative;
+    overflow: hidden;
+    background: url('https://raw.githubusercontent.com/krsnasboy/test/refs/heads/main/ChatGPT%20Image%20Jun%2021%2C%202025%2C%2010_43_52%20PM.png') center center / cover no-repeat;
+}
+
+.process-section.parallax-bg2::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.02) 10px,
+        rgba(255, 255, 255, 0.02) 20px
+    );
+    z-index: 0;
+}
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const section = document.querySelector('.enterprise-features');
+                const content = document.querySelector('.features-content');
+                const visual = document.querySelector('.features-visual');
+                const featureItems = document.querySelectorAll('.feature-item');
+                const visualElements = document.querySelectorAll('.visual-element');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            content.style.opacity = '1';
+                            content.style.transform = 'translateX(0)';
+                            
+                            visual.style.opacity = '1';
+                            visual.style.transform = 'translateX(0)';
+                            
+                            featureItems.forEach((item, index) => {
+                                setTimeout(() => {
+                                    item.style.opacity = '1';
+                                    item.style.transform = 'translateX(0)';
+                                }, index * 100 + 300);
+                            });
+                            
+                            visualElements.forEach((el, index) => {
+                                setTimeout(() => {
+                                    el.style.opacity = '0.8';
+                                    el.style.transform = 'translateY(0)';
+                                }, index * 100 + 500);
+                            });
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                observer.observe(section);
+            });
+        </script>
+    </section>
+
+    
+
+    <section class="who-we-are-section">
+        <div class="who-we-are-content fade-in">
+            <div class="who-we-are-container slide-in-up">
+                <h2 class="section-title">WHO WE ARE</h2>
+                <div class="intro-text">
+                    <p class="slide-in-up">Xcence is an Indian crypto OTC desk and retail trading service — providing trusted and fast INR to crypto services. Whether you're an HNI trading $100K+, a business moving treasury funds, or an individual buying USDT for ₹1 lakh, Xcence makes crypto easy.</p>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </section>
+
+         <!-- Tech Solutions Showcase Section -->
+    <section class="tech-solutions">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Enterprise-Grade Tech Solutions</h2>
+                
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Cloud Infrastructure</h3>
+                    <p>Scalable, secure cloud solutions with 99.99% uptime and global availability zones.</p>
+                    <div class="tech-stack">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>GCP</span>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Enterprise AI solutions that learn and adapt to your business needs in real-time.</p>
+                    <div class="tech-stack">
+                        <span>TensorFlow</span>
+                        <span>PyTorch</span>
+                        <span>MLflow</span>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>End-to-end security solutions with threat detection and automated response.</p>
+                    <div class="tech-stack">
+                        <span>Zero Trust</span>
+                        <span>SIEM</span>
+                        <span>EDR</span>
+                    </div>
+                </div>
+                
+                <div class="solution-card">
+                    <div class="card-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights with our advanced analytics platform.</p>
+                    <div class="tech-stack">
+                        <span>Snowflake</span>
+                        <span>Databricks</span>
+                        <span>Tableau</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <style>
+            .tech-solutions {
+                padding: 8rem 0;
+                background: linear-gradient(135deg, #edf2ff 0%, #f7ebff 100%);
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .tech-solutions::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: 
+                    radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+                z-index: 1;
+            }
+            
+            .section-header {
+                text-align: center;
+                margin-bottom: 5rem;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .section-title {
+                font-size: 3.5rem;
+                font-weight: 800;
+                color: #fff;
+                margin-bottom: 1.5rem;
+                background: linear-gradient(90deg, #0a0125, #08133f);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+            }
+            
+            .section-subtitle {
+                font-size: 1.5rem;
+                color: rgba(36, 5, 56, 0.8);
+                max-width: 700px;
+                margin: 0 auto;
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0.1s;
+            }
+            
+            .solutions-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+                position: relative;
+                z-index: 2;
+            }
+            
+            .solution-card {
+                background: rgba(30, 41, 59);
+                backdrop-filter: blur(10px);
+                border-radius: 16px;
+                padding: 2.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            
+            .solution-card:nth-child(1) { transition-delay: 0.1s; }
+            .solution-card:nth-child(2) { transition-delay: 0.2s; }
+            .solution-card:nth-child(3) { transition-delay: 0.3s; }
+            .solution-card:nth-child(4) { transition-delay: 0.4s; }
+            
+            .solution-card:hover {
+                transform: translateY(-10px) !important;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                border-color: rgba(102, 126, 234, 0.5);
+                background: rgba(30, 41, 59, 0.8);
+            }
+            
+            .card-icon {
+                width: 70px;
+                height: 70px;
+                background: linear-gradient(135deg, #667eea, #764ba2);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1.5rem;
+                font-size: 1.8rem;
+                color: white;
+            }
+            
+            .solution-card h3 {
+                font-size: 1.5rem;
+                color: white;
+                margin-bottom: 1rem;
+                font-weight: 600;
+            }
+            
+            .solution-card p {
+                color: rgba(255, 255, 255, 0.7);
+                margin-bottom: 1.5rem;
+                line-height: 1.6;
+            }
+            
+            .tech-stack {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            
+            .tech-stack span {
+                background: rgba(102, 126, 234, 0.2);
+                color: #c7d2fe;
+                padding: 0.3rem 0.8rem;
+                border-radius: 20px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+            
+            @media (max-width: 768px) {
+                .section-title {
+                    font-size: 2.5rem;
+                }
+                
+                .section-subtitle {
+                    font-size: 1.2rem;
+                }
+                
+                .solutions-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const section = document.querySelector('.tech-solutions');
+                const title = document.querySelector('.section-title');
+                const subtitle = document.querySelector('.section-subtitle');
+                const cards = document.querySelectorAll('.solution-card');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            title.style.opacity = '1';
+                            title.style.transform = 'translateY(0)';
+                            
+                            subtitle.style.opacity = '1';
+                            subtitle.style.transform = 'translateY(0)';
+                            
+                            cards.forEach(card => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            });
+                        }
+                    });
+                }, { threshold: 0.1 });
+                
+                observer.observe(section);
+            });
+        </script>
+    </section>
+
+    <!-- Liquidity Solutions Section -->
+
+
+    <!-- Trading Process Section -->
+    <section class="process-section parallax-bg2">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title2">SEAMLESS TRADING PROCESS</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Three simple steps to execute large crypto trades</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-line"></div>
+                
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Request Quote</h3>
+                        <p>Contact our desk with your trade details (pair, amount, settlement preference)</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Receive Execution</h3>
+                        <p>Get a firm quote with no hidden fees and confirm the trade</p>
+                    </div>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Settle Trade</h3>
+                        <p>Assets transferred within minutes with full confirmation</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Who We Serve Section -->
-    <section class="who-we-serve-section">
-        <div class="container">
-            <div class="who-we-serve-content fade-in">
-                <h2 class="slide-in-up">WHO WE SERVE</h2>
-                <ul class="serve-categories slide-in-up">
-                    <li>
-                        <span class="category-title">Institutions / Corporates</span>
-                        <span class="category-range">₹8 lakh — ₹100 crore+ per order</span>
-                    </li>
-                    <li>
-                        <span class="category-title">HNIs</span>
-                        <span class="category-range">₹8 lakh — ₹5 crore+</span>
-                    </li>
-                    <li>
-                        <span class="category-title">Retail Clients</span>
-                        <span class="category-range">₹1 lakh — ₹8 lakh (fixed price)</span>
-                    </li>
-                    <li>
-                        <span class="category-title">Businesses</span>
-                        <span class="category-range">INR onramp/offramp services</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    
+
+    
+
+   
+
+    
+
+    <!-- CSS Styles -->
+    <style>
+        /* Premium Section Styles */
+        .premium-section {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .premium-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            display: inline-block;
+            margin-left: -9%;
+            
+        }
+
+.section-title2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            font-family: 'Montserrat', sans-serif;
+            position: relative;
+            display: inline-block;
+            margin-left: -9%;
+            
+        }
+
+
+
+        .glitch {
+            position: relative;
+        }
+
+        .glitch::before {
+            content: attr(data-text);
+            position: absolute;
+            left: 2px;
+            text-shadow: -2px 0 #667eea;
+            top: 0;
+            color: white;
+            background: #0f172a;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            animation: noise-anim 2s infinite linear alternate-reverse;
+        }
+
+        .glitch::after {
+            content: attr(data-text);
+            position: absolute;
+            left: -2px;
+            text-shadow: 2px 0 #764ba2;
+            top: 0;
+            color: white;
+            background: #0f172a;
+            overflow: hidden;
+            clip: rect(0, 900px, 0, 0);
+            animation: noise-anim-2 3s infinite linear alternate-reverse;
+        }
+
+        @keyframes noise-anim {
+            0% { clip: rect(12px, 9999px, 33px, 0); }
+            20% { clip: rect(65px, 9999px, 119px, 0); }
+            40% { clip: rect(30px, 9999px, 105px, 0); }
+            60% { clip: rect(98px, 9999px, 9px, 0); }
+            80% { clip: rect(45px, 9999px, 78px, 0); }
+            100% { clip: rect(2px, 9999px, 63px, 0); }
+        }
+
+        @keyframes noise-anim-2 {
+            0% { clip: rect(85px, 9999px, 15px, 0); }
+            20% { clip: rect(3px, 9999px, 99px, 0); }
+            40% { clip: rect(67px, 9999px, 122px, 0); }
+            60% { clip: rect(10px, 9999px, 35px, 0); }
+            80% { clip: rect(91px, 9999px, 74px, 0); }
+            100% { clip: rect(23px, 9999px, 117px, 0); }
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            margin: 0 auto 2rem;
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.5rem;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 2;
+            background: transparent;
+        }
+
+        .feature-card {
+    background: rgba(0, 0, 0, 0.08);  /* white glass (preferred) */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 3rem 2rem;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            z-index: -1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 252, 252, 0.3);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #000000, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .feature-icon svg {
+            width: 36px;
+            height: 36px;
+            fill: white;
+        }
+
+        .feature-card h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .feature-card p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .feature-number {
+            position: absolute;
+            bottom: 1.5rem;
+            right: 2rem;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.2);
+            font-weight: 700;
+        }
+
+        /* Liquidity Section Styles */
+        
+
+        .highlight-text {
+            font-size: 1.8rem;
+            color: #0f172a;
+            margin-bottom: 3rem;
+            padding: 1.5rem;
+            background: linear-gradient(90deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border-left: 4px solid #667eea;
+            border-radius: 0 8px 8px 0;
+        }
+
+        
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #667eea;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #64748b;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        
+
+        .crypto-animation {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .crypto-coin {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease;
+            transform: scale(0);
+            opacity: 0;
+        }
+
+        .crypto-coin.btc {
+            background-image: url('https://cryptologos.cc/logos/bitcoin-btc-logo.png');
+            top: 20%;
+            left: 10%;
+            background-color: #f7931a;
+        }
+
+        .crypto-coin.eth {
+            background-image: url('https://cryptologos.cc/logos/ethereum-eth-logo.png');
+            top: 60%;
+            left: 20%;
+            background-color: #627eea;
+        }
+
+        .crypto-coin.usdt {
+            background-image: url('https://cryptologos.cc/logos/tether-usdt-logo.png');
+            top: 30%;
+            left: 70%;
+            background-color: #26a17b;
+        }
+
+        .crypto-coin.sol {
+            background-image: url('https://cryptologos.cc/logos/solana-sol-logo.png');
+            top: 70%;
+            left: 60%;
+            background-color: #00ffbd;
+        }
+
+        .connection-lines {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .connection-lines::before,
+        .connection-lines::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 0;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            transform-origin: top;
+        }
+
+        .connection-lines::before {
+            left: 25%;
+            top: 25%;
+        }
+
+        .connection-lines::after {
+            right: 25%;
+            top: 25%;
+        }
+
+        /* Process Section Styles */
+        .process-section {
+            padding: 8rem 0;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .process-steps {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .process-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .step-card {
+            position: relative;
+            background: rgba(255, 255, 255);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 4rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            z-index: 2;
+        }
+
+        .step-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .step-number {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 700;
+            left: -30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+
+        .step-card:nth-child(even) .step-number {
+            left: auto;
+            right: -30px;
+        }
+
+        .step-content {
+            padding-left: 4rem;
+        }
+
+        .step-card:nth-child(even) .step-content {
+            padding-left: 0;
+            padding-right: 4rem;
+            text-align: right;
+        }
+
+        .step-card h3 {
+            color: rgb(10, 10, 84);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-card p {
+            color: rgba(20, 10, 92, 0.9);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Assets Section Styles */
+
+
+        /* Testimonials Section Styles */
+
+
+        
+
+        /* CTA Section Styles */
+        .cta-section {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+
+        .cta-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 800;
+        }
+
+        .cta-content p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #667eea;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+           
+            
+            .section-title {
+                font-size: 2.8rem;
+            }
+            
+                        .section-title2 {
+                font-size: 2.8rem;
+            }
+
+            .highlight-text {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .step-card {
+                padding: 2rem;
+            }
+            
+            .step-number {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                left: 50%;
+                top: -25px;
+                transform: translateX(-50%);
+            }
+            
+            .step-card:nth-child(even) .step-number {
+                left: 50%;
+                right: auto;
+            }
+            
+            .step-content {
+                padding-left: 0;
+                padding-right: 0;
+                text-align: center;
+            }
+            
+            .step-card:nth-child(even) .step-content {
+                padding-right: 0;
+                text-align: center;
+            }
+            
+            .process-line {
+                display: none;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+           
+            
+            .stat-value {
+                font-size: 2.5rem;
+            }
+            
+            .cta-content h2 {
+                font-size: 2.2rem;
+            }
+            
+            .cta-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        // Scroll Reveal Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize ScrollReveal with custom settings
+            const sr = ScrollReveal({
+                origin: 'bottom',
+                distance: '60px',
+                duration: 1000,
+                delay: 200,
+                easing: 'cubic-bezier(0.5, 0, 0, 1)',
+                reset: false
+            });
+
+            // Configure animations for different elements
+            sr.reveal('.section-header', { 
+                origin: 'top',
+                delay: 100
+            });
+            
+            sr.reveal('.feature-card', { 
+                interval: 200,
+                scale: 0.9
+            });
+            
+            
+            
+            
+            
+            sr.reveal('.step-card', { 
+                interval: 300,
+                rotate: { x: 20 }
+            });
+            
+            sr.reveal('.asset-card', { 
+                interval: 150,
+                scale: 0.85
+            });
+            
+            sr.reveal('.testimonial-card', { 
+                origin: 'bottom',
+                interval: 300
+            });
+            
+            sr.reveal('.cta-content', { 
+                scale: 0.9,
+                delay: 300
+            });
+
+            // Animate crypto coins when in view
+            const cryptoAnimation = function() {
+                const cryptoSection = document.querySelector('.liquidity-visual');
+                const cryptoCoins = document.querySelectorAll('.crypto-coin');
+                const connectionLines = document.querySelector('.connection-lines');
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // Animate coins
+                            cryptoCoins.forEach((coin, index) => {
+                                setTimeout(() => {
+                                    coin.style.transform = 'scale(1)';
+                                    coin.style.opacity = '1';
+                                    
+                                    // Add floating animation
+                                    coin.style.animation = `float 3s ease-in-out ${index * 0.2}s infinite`;
+                                }, index * 200);
+                            });
+                            
+                            // Animate connection lines
+                            setTimeout(() => {
+                                connectionLines.style.height = '100%';
+                                connectionLines.style.opacity = '1';
+                            }, 800);
+                            
+                            // Stop observing after animation
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                observer.observe(cryptoSection);
+            };
+            
+            cryptoAnimation();
+
+            // Animate counting numbers
+            const animateCounters = function() {
+                const counters = document.querySelectorAll('.stat-value');
+                const speed = 200;
+                
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                });
+            };
+            
+            // Start counter animation when section is in view
+            const counterObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const liquiditySection = document.querySelector('.liquidity-section');
+            if (liquiditySection) {
+                counterObserver.observe(liquiditySection);
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Initialize ScrollReveal if not already loaded
+        if (typeof ScrollReveal !== 'function') {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js';
+            script.onload = function() {
+                // Reinitialize animations after loading ScrollReveal
+                const event = new Event('DOMContentLoaded');
+                document.dispatchEvent(event);
+            };
+            document.head.appendChild(script);
+        }
+    </script>
+</body>
+
+
+
+
+
+
+    
+
+
 
     <!-- Our Offerings Section -->
     <section class="offerings-section">
@@ -1460,6 +2706,8 @@
         </div>
     </section>
 
+    
+
     <script>
         // Initialize smooth scrolling and animations
         document.addEventListener('DOMContentLoaded', function() {
@@ -1488,7 +2736,7 @@
             sections.forEach(section => {
                 section.style.opacity = '1';
                 section.style.transform = 'translateY(0)';
-                section.style.transition = 'all 0.6s ease-out';
+                section.style.transition = 'all 0.8s ease-out';
                 sectionObserver.observe(section);
             });
         });
@@ -1567,8 +2815,21 @@
             }, 2000);
         });
     </script>
-</body>
-</html>
+<!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>READY TO EXECUTE LARGE TRADES?</h2>
+                <p>Get in touch with our OTC desk for personalized service and competitive pricing</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Our Desk</a>
+                    <a href="tel:+911234567890" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> +91 12345 67890
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
