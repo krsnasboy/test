@@ -570,6 +570,10 @@
             box-sizing: border-box;
         }
 
+        html {
+            font-size: 16px;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
@@ -590,12 +594,13 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            width: 100%;
         }
 
         /* Button Styles */
         .btn {
             display: inline-block;
-            padding: 1rem 2rem;
+            padding: 0.8rem 1.5rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -603,11 +608,12 @@
             border: none;
             cursor: pointer;
             font-size: 1rem;
+            white-space: nowrap;
         }
 
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(242, 189, 255, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(242, 189, 255, 0.3);
         }
 
         .btn-primary {
@@ -617,7 +623,7 @@
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(235, 193, 255, 0.3);
+            box-shadow: 0 8px 20px rgba(235, 193, 255, 0.3);
             color: white;
         }
 
@@ -632,14 +638,14 @@
             background: rgba(255, 255, 255, 0.2);
             color: #fff;
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
         }
 
         /* Animation Classes */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
         }
 
         .fade-in.visible {
@@ -649,8 +655,8 @@
 
         .slide-in-left {
             opacity: 0;
-            transform: translateX(-50px);
-            transition: all 0.8s ease;
+            transform: translateX(-30px);
+            transition: all 0.6s ease;
         }
 
         .slide-in-left.visible {
@@ -660,8 +666,8 @@
 
         .slide-in-right {
             opacity: 0;
-            transform: translateX(50px);
-            transition: all 0.8s ease;
+            transform: translateX(30px);
+            transition: all 0.6s ease;
         }
 
         .slide-in-right.visible {
@@ -671,8 +677,8 @@
 
         .slide-in-up {
             opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
         }
 
         .slide-in-up.visible {
@@ -683,6 +689,7 @@
         /* Hero Section */
         .hero {
             height: 100vh;
+            min-height: 600px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             background-image: url('https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=2232&auto=format&fit=crop');
             background-size: cover;
@@ -730,10 +737,11 @@
             z-index: 2;
             max-width: 800px;
             padding: 0 2rem;
+            width: 100%;
         }
 
         .hero h1 {
-            font-size: 4.5rem;
+            font-size: 2.5rem;
             font-weight: 700;
             color: #fff;
             margin-bottom: 1.5rem;
@@ -742,7 +750,7 @@
         }
 
         .hero p {
-            font-size: 1.5rem;
+            font-size: 1.1rem;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: 2rem;
             font-weight: 300;
@@ -752,15 +760,13 @@
             display: flex;
             gap: 1rem;
             justify-content: center;
+            flex-wrap: wrap;
         }
-
-        /* Who We Are Section */
-       
 
         /* OTC Desk Section */
         .otc-desk-section {
             background: #ffffff;
-            padding: 12rem 0;
+            padding: 6rem 0;
             position: relative;
             overflow: hidden;
             box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
@@ -785,72 +791,75 @@
             z-index: 2;
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 3rem;
+            padding: 0 1.5rem;
         }
 
         .otc-desk-grid {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 6rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
             align-items: center;
         }
 
         .otc-desk-image {
             position: relative;
             order: 2;
+            width: 100%;
         }
 
         .otc-image {
             width: 100%;
-            height: 500px;
+            height: auto;
+            max-height: 400px;
             object-fit: cover;
-            border-radius: 16px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            border-radius: 12px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             transition: all 0.4s ease;
             position: relative;
         }
 
         .otc-image:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 35px 70px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
         .otc-desk-text {
             order: 1;
-            padding-right: 2rem;
+            padding-right: 0;
+            width: 100%;
         }
 
         .otc-desk-text h2 {
             color: #0f172a;
-            font-size: 4.5rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             position: relative;
             display: inline-block;
             line-height: 1.1;
-            text-shadow: 0 5px 4px rgb(30, 25, 25, 0.8);
+            text-shadow: 0 3px 4px rgba(30, 25, 25, 0.8);
             font-family: 'Montserrat', sans-serif;
         }
 
         .otc-desk-text h2::after {
             content: '';
             position: absolute;
-            bottom: -15px;
+            bottom: -10px;
             left: 0;
-            width: 120px;
-            height: 4px;
+            width: 80px;
+            height: 3px;
             background: linear-gradient(90deg, #667eea, #764ba2, transparent);
             border-radius: 3px;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
         }
 
         .otc-desk-text p {
             color: #0f172a;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             line-height: 1.6;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             font-weight: 600;
             letter-spacing: 0.2px;
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -865,19 +874,19 @@
         .otc-features {
             list-style: none;
             padding: 0;
-            margin: 3rem 0;
+            margin: 2rem 0;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
+            grid-template-columns: 1fr;
+            gap: 1rem;
         }
 
         .otc-features li {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 0;
             font-weight: 500;
             position: relative;
-            padding-left: 2.2rem;
+            padding-left: 2rem;
             font-family: 'Poppins', sans-serif;
             transition: transform 0.3s ease;
             background: linear-gradient(90deg, #081b4e, #0f2672, #172072, #071e85, #4a0e85);
@@ -888,7 +897,7 @@
         }
 
         .otc-features li:hover {
-            transform: translateX(5px);
+            transform: translateX(3px);
         }
 
         .otc-features li::before {
@@ -897,7 +906,7 @@
             left: 0;
             top: 0;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -907,16 +916,16 @@
 
         .otc-highlight {
             color: #0f172a;
-            font-size: 1.6rem;
+            font-size: 1.2rem;
             font-weight: 700;
             line-height: 1.5;
-            margin-top: 3rem;
-            padding: 2.5rem;
+            margin-top: 2rem;
+            padding: 1.5rem;
             background: linear-gradient(135deg, rgba(102, 126, 234, 0.08), rgba(118, 75, 162, 0.08));
-            border-left: 5px solid #667eea;
-            border-radius: 12px;
+            border-left: 4px solid #667eea;
+            border-radius: 10px;
             font-family: 'Poppins', sans-serif;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.1);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.1);
             position: relative;
             overflow: hidden;
         }
@@ -924,7 +933,7 @@
         /* Who We Serve Section */
         .who-we-serve-section {
             background: #ffffff;
-            padding: 12rem 0;
+            padding: 6rem 0;
             position: relative;
             overflow: hidden;
             box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.05);
@@ -950,43 +959,43 @@
             max-width: 1000px;
             margin: 0 auto;
             text-align: center;
-            padding: 0 3rem;
+            padding: 0 1.5rem;
         }
 
         .who-we-serve-content h2 {
             color: #0f172a;
-            font-size: 5rem;
+            font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 3px;
             position: relative;
             display: inline-block;
             line-height: 1.1;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
             font-family: 'Montserrat', sans-serif;
         }
 
         .who-we-serve-content h2::after {
             content: '';
             position: absolute;
-            bottom: -20px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 140px;
-            height: 5px;
+            width: 100px;
+            height: 4px;
             background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
             border-radius: 3px;
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 3px 8px rgba(102, 126, 234, 0.4);
         }
 
         .serve-categories {
             list-style: none;
             padding: 0;
-            margin: 4rem 0;
+            margin: 3rem 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
@@ -995,33 +1004,33 @@
         .serve-categories li {
             background: #0f172a;
             color: #ffffff;
-            font-size: 1.4rem;
-            line-height: 1.7;
-            padding: 3rem 2.5rem;
-            border-radius: 12px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+            border-radius: 10px;
             position: relative;
             text-align: left;
             font-weight: 500;
             list-style: none;
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.2);
-            transition: all 0.4s ease;
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
+            transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .serve-categories li:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 25px 50px rgba(15, 23, 42, 0.3);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.25);
             border-color: rgba(102, 126, 234, 0.3);
         }
 
         .serve-categories li::before {
             content: "✓";
             position: absolute;
-            left: 2rem;
-            top: 3rem;
+            left: 1.5rem;
+            top: 2rem;
             color: #667eea;
             font-weight: bold;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             background: linear-gradient(135deg, #667eea, #764ba2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -1030,21 +1039,21 @@
 
         .category-title {
             display: block;
-            font-size: 1.6rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: #ffffff;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             letter-spacing: 0.5px;
             text-transform: uppercase;
         }
 
         .category-range {
             display: block;
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: rgba(255, 255, 255, 0.9);
             font-weight: 400;
-            margin-left: 2.5rem;
-            line-height: 1.6;
+            margin-left: 2rem;
+            line-height: 1.5;
         }
 
         /* Our Offerings Section */
@@ -1055,7 +1064,7 @@
                 radial-gradient(circle at 80% 20%, rgba(30, 64, 175, 0.2) 0%, transparent 50%);
             background-size: cover;
             background-position: center;
-            padding: 12rem 0;
+            padding: 6rem 0;
             position: relative;
             overflow: hidden;
         }
@@ -1073,25 +1082,25 @@
         }
 
         .section-heading {
-            color: #1e3a8a;
-            font-size: 4.2rem;
+            color: #ffffff;
+            font-size: 2.5rem;
             font-weight: 900;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 3px;
             position: relative;
             display: block;
             line-height: 1.1;
-            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
             font-family: 'Montserrat', sans-serif;
-            white-space: nowrap;
             text-align: center;
             z-index: 2;
         }
 
         .content-wrapper {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             gap: 3rem;
         }
@@ -1099,48 +1108,46 @@
         .offerings-content {
             position: relative;
             z-index: 2;
-            max-width: 400px;
+            max-width: 100%;
             margin: 0;
-            text-align: left;
-            padding: 0;
+            text-align: center;
+            padding: 0 1.5rem;
+            width: 100%;
         }
 
         .offerings-list {
-            list-style: disc !important;
+            list-style: none;
             padding: 0;
             margin: 2rem 0;
             display: flex;
             flex-direction: column;
             gap: 1rem;
             max-width: 100%;
-            margin-left: 0;
+            margin-left: auto;
             margin-right: auto;
+            width: 100%;
         }
 
         .offerings-list li {
             background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
             color: #ffffff;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             line-height: 1.4;
-            padding: 0.8rem 1.5rem;
+            padding: 1rem;
             border-radius: 8px;
             position: relative;
             text-align: center;
             font-weight: 600;
-            list-style: none !important;
-            list-style-type: none !important;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
             border: 1px solid rgba(0, 0, 0, 0.2);
-            white-space: nowrap;
-            width: 546px;
-            flex-shrink: 0;
+            width: 100%;
         }
 
         .offerings-list li:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
             border-color: rgba(0, 0, 0, 0.4);
         }
@@ -1149,35 +1156,37 @@
         .register-form {
             position: relative;
             background: rgba(255, 255, 255, 0.95);
-            padding: 2.1rem;
+            padding: 1.5rem;
             border-radius: 12px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             max-width: 480px;
+            width: 100%;
             z-index: 2;
+            margin: 0 1.5rem;
         }
 
         .register-form h3 {
             color: #0f172a;
-            font-size: 2.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 1.4rem;
+            margin-bottom: 1.2rem;
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             font-family: 'Montserrat', sans-serif;
         }
 
         .register-form .form-group {
-            margin-bottom: 1.05rem;
+            margin-bottom: 1rem;
         }
 
         .register-form input,
         .register-form select,
         .register-form textarea {
             width: 100%;
-            padding: 0.7rem;
+            padding: 0.8rem;
             border: 2px solid rgba(102, 126, 234, 0.2);
             border-radius: 8px;
             font-size: 1rem;
@@ -1195,109 +1204,138 @@
         }
 
         .register-form textarea {
-            height: 70px;
+            height: 100px;
             resize: vertical;
         }
 
         .register-form button {
             width: 100%;
-            padding: 0.84rem;
-            font-size: 1.1rem;
+            padding: 0.9rem;
+            font-size: 1rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .otc-desk-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 4rem;
-            }
-            
-            .otc-desk-text h2 {
-                font-size: 3.8rem;
-                letter-spacing: 3px;
-            }
-            
-            .otc-image {
-                height: 400px;
-            }
-        }
-
-        @media (max-width: 768px) {
+        @media (min-width: 480px) {
             .hero h1 {
                 font-size: 3rem;
             }
-
+            
             .hero p {
                 font-size: 1.2rem;
             }
+            
+            .otc-features {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .serve-categories li {
+                padding: 2rem;
+            }
+        }
 
-            .who-we-are-section,
+        @media (min-width: 768px) {
+            html {
+                font-size: 17px;
+            }
+            
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.3rem;
+            }
+            
             .otc-desk-section,
             .who-we-serve-section,
             .offerings-section {
                 padding: 8rem 0;
             }
             
-            .who-we-are-content h2,
             .otc-desk-text h2,
             .who-we-serve-content h2,
             .section-heading {
                 font-size: 3.5rem;
-                letter-spacing: 3px;
-                margin-bottom: 3rem;
+                letter-spacing: 4px;
             }
             
             .otc-desk-grid {
-                grid-template-columns: 1fr;
+                flex-direction: row;
                 gap: 4rem;
             }
             
-            .otc-image {
-                height: 350px;
-            }
-            
             .serve-categories {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             }
             
             .content-wrapper {
-                flex-direction: column;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+            
+            .offerings-content {
+                text-align: left;
+                padding: 0;
+            }
+            
+            .offerings-list {
+                align-items: flex-start;
             }
             
             .offerings-list li {
-                width: 100%;
-                white-space: normal;
+                text-align: left;
+                padding: 1rem 1.5rem;
             }
         }
 
-        @media (max-width: 480px) {
+        @media (min-width: 1024px) {
             .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
+                font-size: 4rem;
             }
             
-            .who-we-are-content h2,
+            .hero p {
+                font-size: 1.5rem;
+            }
+            
+            .otc-desk-section,
+            .who-we-serve-section,
+            .offerings-section {
+                padding: 10rem 0;
+            }
+            
             .otc-desk-text h2,
             .who-we-serve-content h2,
             .section-heading {
-                font-size: 2.8rem;
-                letter-spacing: 2px;
-                margin-bottom: 2.5rem;
+                font-size: 4rem;
+                letter-spacing: 5px;
+            }
+            
+            .otc-desk-grid {
+                gap: 6rem;
             }
             
             .otc-image {
-                height: 280px;
+                max-height: 500px;
             }
             
-            .hero-buttons {
-                flex-direction: column;
-                gap: 1rem;
+            .serve-categories {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .otc-desk-text h2,
+            .who-we-serve-content h2,
+            .section-heading {
+                font-size: 4.5rem;
+                letter-spacing: 6px;
+            }
+            
+            .hero h1 {
+                font-size: 4.5rem;
             }
         }
     </style>
@@ -1316,9 +1354,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Who We Are Section -->
-   
 
     <!-- About Our OTC Desk Section -->
     <section class="otc-desk-section">
@@ -1453,7 +1488,7 @@
             sections.forEach(section => {
                 section.style.opacity = '1';
                 section.style.transform = 'translateY(0)';
-                section.style.transition = 'all 0.8s ease-out';
+                section.style.transition = 'all 0.6s ease-out';
                 sectionObserver.observe(section);
             });
         });
